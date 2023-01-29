@@ -60,3 +60,28 @@ A Vulnerability Assessment Reporting Language (VARL) schema current includes the
 * Report Evidence: An array of appendices, if any, containing detailed information about specific vulnerabilities or
   systems, along with any supporting documentation or evidence.
 
+Benefits of VARL
+----------------
+
+The benefits of using the Vulnerability Assessment and Reporting Language (VARL) are as follows:
+
+* Improved security: A VARL helps to identify and prioritize vulnerabilities, which allows organizations to take
+  proactive measures to mitigate them and improve overall security.
+
+* Standardization: VARL helps to standardize the reporting of vulnerabilities across different teams, organizations, and
+  industries, making it easier to communicate and compare the results of assessments.
+
+* Ease of use: VARL simplifies the process of reporting vulnerabilities by providing a clear and consistent format for
+  organizing information.
+
+* Better collaboration: VARL makes it easier for different teams, such as security teams, developers, and management,
+  to collaborate and work together to address vulnerabilities.
+
+* Increased efficiency: VARL streamlines the vulnerability assessment and reporting process, reducing the time and
+  resources required to complete assessments.
+
+* Improved tracking: VARL provides a standardized way to track the status of vulnerabilities and their resolution,
+  making it easier to ensure that they are addressed in a timely manner.
+
+* Better decision-making: By providing a clear and organized view of vulnerabilities and their impact, VARL enables
+  better decision-making, allowing organizations to prioritize their remediation efforts based on risk.
