@@ -1,0 +1,32 @@
+report_date: 2021-01-01T12:00:00Z
+report_version: 1.0.0
+assessment_scope:
+  - ip_address: 192.168.1.1
+    hostname: example-server-1
+  - ip_address: 192.168.1.2
+    hostname: example-server-2
+assessment_methodology:
+  - Network Scanning
+  - Vulnerability Scanning
+  - Manual Testing
+vulnerabilities:
+  - name: Insecure file permissions
+    severity: medium
+    description: The '/etc/passwd' file has permissions set to 0777, which allows any user to read and write to the file.
+  - name: Weak SSH credentials
+    severity: high
+    description: The default SSH credentials for the root user have not been changed from the factory settings.
+recommendations:
+  - action: Restrict access to the '/etc/passwd' file
+    priority: medium
+  - action: Change the default SSH credentials for the root user
+    priority: high
+assessment_team:
+  - name: John Doe
+    qualifications: CISSP, OSCP
+  - name: Jane Smith
+    qualifications: CEH, GPEN
+report_summary: The vulnerability assessment identified 2 vulnerabilities, both of which have been assigned a medium or high severity rating. The vulnerabilities have been described in detail in the vulnerabilities section of the report, and recommendations for remediation have been provided.
+report_evidence:
+    - name: screenshot of the finding
+      url: https://s3.amazonaws.com/bucket/screenshot.png
