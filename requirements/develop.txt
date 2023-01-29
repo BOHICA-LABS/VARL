@@ -1,0 +1,23 @@
+-r base.txt
+
+# Documentation
+# ------------------------------------------------------------------------------
+sphinx==5.3.0  # https://github.com/sphinx-doc/sphinx
+sphinx-autobuild==2021.3.14 # https://github.com/GaretJax/sphinx-autobuild
+
+python-dotenv >= 0.19.1 # A module to read .env files and set environment variables
+furo == 2022.9.15 # A modern, responsive, and mobile-friendly Sphinx theme
+sphinx-rtd-theme >= 0.5.2 # A Sphinx theme for Read the Docs
+sphinx-click >= 2.5.0 # A Sphinx extension for documenting Click applications
+click-extra >= 3.6.0 # A collection of Click extensions
+sphinxcontrib-programoutput >= 0.16 # A Sphinx extension for program output
+sphinx-autodoc-typehints >= 1.12.0 # A Sphinx extension for automatically documenting Python type hints
+sphinx_automodapi >= 0.13 # A Sphinx extension for automatically documenting Python modules
+xdoctest >= 1.1.0 # A Sphinx extension for automatically documenting Python modules
+pygments >= 2.10.0 # A syntax highlighter for Python, Jinja and more
+
+# Testing
+# ------------------------------------------------------------------------------
+mypy==0.982  # https://github.com/python/mypy
+pytest==7.2.1  # https://github.com/pytest-dev/pytest
+pytest-sugar==0.9.6  # https://github.com/Frozenball/pytest-sugar
