@@ -9,7 +9,15 @@
     },
     "methodology_version": {
       "type": "string",
+      "format": "semver",
       "description": "The version of the assessment methodology being used."
+    },
+    "methodology_objectives": {
+      "type": "array",
+      "description": "A list of objectives for the assessment methodology.",
+      "items": {
+        "type": "string"
+      }
     },
     "methodology_type": {
       "type": "string",
@@ -28,6 +36,114 @@
       "type": "string",
       "format": "uri",
       "description": "A URL to the documentation for the assessment methodology."
+    },
+    "methodology_phases": {
+      "type": "array",
+      "description": "A list of phases for the assessment methodology.",
+      "items": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string",
+            "description": "The name of the phase."
+          },
+          "description": {
+            "type": "string",
+            "description": "A brief description of the phase."
+          },
+          "objectives": {
+            "type": "array",
+            "description": "A list of objectives for the phase.",
+            "items": {
+                "type": "string"
+                }
+          },
+          "tools": {
+            "type": "array",
+            "description": "A list of tools used in the phase.",
+            "items": {
+              "type": "string"
+            }
+          },
+          "techniques": {
+            "type": "array",
+            "description": "A list of techniques used in the phase.",
+            "items": {
+              "type": "string"
+                }
+          },
+          "tasks": {
+            "type": "array",
+            "description": "A list of tasks performed in the phase.",
+            "items": {
+              "type": "string"
+            }
+          },
+          "deliverables": {
+            "type": "array",
+            "description": "A list of deliverables produced in the phase.",
+            "items": {
+              "type": "string"
+            }
+          },
+          "resources": {
+            "type": "array",
+            "description": "A list of resources used in the phase.",
+            "items": {
+              "type": "string"
+            }
+          },
+          "references": {
+            "type": "array",
+            "description": "A list of references used in the phase.",
+            "items": {
+              "type": "string"
+            }
+          },
+          "notes": {
+            "type": "array",
+            "description": "A list of notes for the phase.",
+            "items": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "methodology_notes": {
+      "type": "array",
+      "description": "A list of notes for the assessment methodology.",
+      "items": {
+        "type": "string"
+      }
+    },
+    "methodology_references": {
+      "type": "array",
+      "description": "A list of references for the assessment methodology.",
+      "items": {
+        "type": "string"
+      }
+    },
+    "methodology_tools": {
+      "type": "array",
+      "description": "A list of tools used in the assessment methodology.",
+      "items": {
+        "type": "string"
+      }
+    },
+    "methodology_techniques": {
+      "type": "array",
+      "description": "A list of techniques used in the assessment methodology.",
+      "items": {
+        "type": "string"
+      }
+    },
+    "methodology_resources": {
+      "type": "array",
+      "description": "A list of resources used in the assessment methodology.",
+      "items": {
+        "type": "string"
+      }
     }
   },
   "required": [
