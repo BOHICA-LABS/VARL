@@ -1,0 +1,74 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Assumptions and Risks Schema",
+  "description": "This is for documenting both Assumptions and Risks",
+  "type": "object",
+  "properties": {
+    "assumptions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "assumption_id": {
+            "type": "string"
+          },
+          "assumption_text": {
+            "type": "string"
+          },
+          "assumption_valid": {
+            "type": "boolean"
+          },
+          "assumption_status": {
+            "type": "string"
+          },
+          "assumption_type": {
+            "type": "string",
+            "enum": [
+              "assumption",
+              "risk"
+            ]
+          },
+          "assumption_severity": {
+            "type": "string",
+            "enum": [
+              "low",
+              "medium",
+              "high"
+            ]
+          },
+          "assumption_impact": {
+            "type": "string",
+            "enum": [
+              "low",
+              "medium",
+              "high"
+            ]
+          },
+          "assumption_probability": {
+            "type": "string",
+            "enum": [
+              "low",
+              "medium",
+              "high"
+            ]
+          },
+          "assumption_category": {
+            "type": "string"
+          },
+          "assumption_reported_by": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "assumption_id",
+          "assumption_text",
+          "assumption_type",
+          "assumption_reported_by"
+        ]
+      }
+    }
+  },
+  "required": [
+    "assumptions"
+  ]
+}

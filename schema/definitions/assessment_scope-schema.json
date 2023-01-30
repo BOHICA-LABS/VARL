@@ -1,0 +1,79 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Assessment Scope",
+  "description": "The scope of the assessment.",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "properties": {
+      "ip_addresses": {
+        "type": "array",
+        "items": {
+          "type": "string",
+          "anyOf": [
+            {
+              "format": "ipv4"
+            },
+            {
+              "format": "ipv6"
+            }
+          ]
+        }
+      },
+      "hostname": {
+        "type": "string",
+        "description": "The hostname of the asset being assessed."
+      },
+      "dns_names": {
+        "type": "array",
+        "items": {
+          "type": "string"
+        }
+      },
+      "operating_system": {
+        "type": "string",
+        "description": "The operating system of the asset being assessed."
+      },
+      "applications": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "name": {
+              "type": "string"
+            },
+            "description": {
+              "type": "string"
+            },
+            "version": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "name",
+            "description",
+            "version"
+          ]
+        }
+      },
+      "asset_type": {
+        "type": "string",
+        "enum": [
+          "Server",
+          "Workstation",
+          "Network device",
+          "Mobile device",
+          "Web application",
+          "Industrial",
+          "Other"
+        ]
+      }
+    },
+    "required": [
+      "ip_addresses",
+      "hostname",
+      "asset_type"
+    ],
+    "additionalProperties": false
+  }
+}
