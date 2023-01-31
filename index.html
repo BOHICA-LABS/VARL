@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vulnerability Assessment Reporting language (VARL) &mdash; VARL 1.1.4-dev documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="_static/graphviz.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/sphinx_highlight.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="#" class="icon icon-home"> VARL
+          </a>
+              <div class="version">
+                1.1.4
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">Vulnerability Assessment Reporting language (VARL)</a><ul>
+<li><a class="reference internal" href="#introduction">Introduction</a></li>
+<li><a class="reference internal" href="#varl-schema-definition">VARL Schema Definition</a></li>
+<li><a class="reference internal" href="#benefits-of-varl">Benefits of VARL</a></li>
+</ul>
+</li>
+</ul>
+</div>
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="#">VARL</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="#" class="icon icon-home"></a></li>
+      <li class="breadcrumb-item active">Vulnerability Assessment Reporting language (VARL)</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/index.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="vulnerability-assessment-reporting-language-varl">
+<h1>Vulnerability Assessment Reporting language (VARL)<a class="headerlink" href="#vulnerability-assessment-reporting-language-varl" title="Permalink to this heading"></a></h1>
+<section id="introduction">
+<h2>Introduction<a class="headerlink" href="#introduction" title="Permalink to this heading"></a></h2>
+<p>The Vulnerability Assessment Reporting language (VARL) is a structured format for reporting the results of a
+vulnerability assessment.</p>
+<p>The language includes:</p>
+<ul class="simple">
+<li><p>A clear and concise summary of the assessment’s findings, including the number of vulnerabilities identified and their
+severity.</p></li>
+<li><p>A detailed list of all vulnerabilities identified, including their names, severity levels, and descriptions.</p></li>
+<li><p>Recommendations for mitigating or eliminating the vulnerabilities, along with a prioritization of the actions that
+should be taken first.</p></li>
+<li><p>The scope of the assessment, including the systems and applications that were tested and the time period during which
+the assessment was conducted.</p></li>
+<li><p>The methodology used for the assessment, including the tools and techniques employed.</p></li>
+<li><p>The names and qualifications of the individuals who conducted the assessment.</p></li>
+<li><p>The format of the report should is machine-readable</p></li>
+<li><p>Appendices, if any, containing detailed information about specific vulnerabilities or systems, along with any
+supporting documentation or evidence.</p></li>
+<li><p>The format is intended to provide a clear, actionable report that can be easily understood by both technical and
+non-technical stakeholders.</p></li>
+</ul>
+</section>
+<section id="varl-schema-definition">
+<h2>VARL Schema Definition<a class="headerlink" href="#varl-schema-definition" title="Permalink to this heading"></a></h2>
+<p>A Vulnerability Assessment Reporting Language (VARL) schema current includes the following fields:</p>
+<ul class="simple">
+<li><p>Report Date: The date on which the assessment was conducted.</p></li>
+<li><p>Assessment Scope: The systems and applications that were tested during the assessment, including their IP addresses
+and hostnames.</p></li>
+<li><p>Assessment Methodology: The tools and techniques used to conduct the assessment, including any manual methods or
+automated tools.</p></li>
+<li><p>Vulnerabilities: An array of vulnerabilities identified during the assessment, including their names, severities, and
+descriptions.</p></li>
+<li><p>Recommendations: An array of recommendations for mitigating or eliminating the vulnerabilities, along with a
+prioritization of the actions that should be taken first.</p></li>
+<li><p>Assessment Team: An array of the names and qualifications of the individuals who conducted the assessment.</p></li>
+<li><p>Report Summary: A clear and concise summary of the assessment’s findings, including the number of vulnerabilities
+identified and their severity.</p></li>
+<li><p>Report Evidence: An array of appendices, if any, containing detailed information about specific vulnerabilities or
+systems, along with any supporting documentation or evidence.</p></li>
+</ul>
+</section>
+<section id="benefits-of-varl">
+<h2>Benefits of VARL<a class="headerlink" href="#benefits-of-varl" title="Permalink to this heading"></a></h2>
+<p>The benefits of using the Vulnerability Assessment and Reporting Language (VARL) are as follows:</p>
+<ul class="simple">
+<li><p>Improved security: A VARL helps to identify and prioritize vulnerabilities, which allows organizations to take
+proactive measures to mitigate them and improve overall security.</p></li>
+<li><p>Standardization: VARL helps to standardize the reporting of vulnerabilities across different teams, organizations, and
+industries, making it easier to communicate and compare the results of assessments.</p></li>
+<li><p>Ease of use: VARL simplifies the process of reporting vulnerabilities by providing a clear and consistent format for
+organizing information.</p></li>
+<li><p>Better collaboration: VARL makes it easier for different teams, such as security teams, developers, and management,
+to collaborate and work together to address vulnerabilities.</p></li>
+<li><p>Increased efficiency: VARL streamlines the vulnerability assessment and reporting process, reducing the time and
+resources required to complete assessments.</p></li>
+<li><p>Improved tracking: VARL provides a standardized way to track the status of vulnerabilities and their resolution,
+making it easier to ensure that they are addressed in a timely manner.</p></li>
+<li><p>Better decision-making: By providing a clear and organized view of vulnerabilities and their impact, VARL enables
+better decision-making, allowing organizations to prioritize their remediation efforts based on risk.</p></li>
+</ul>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2023, Joshua Magady, Jared Richards.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
